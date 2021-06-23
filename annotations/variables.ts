@@ -36,5 +36,5 @@ logNumber(1);
 // When to use annotations
 // 1 function that returns the 'any' type
 const json = '{"x":10, "y":20}';
-const coordinates = JSON.parse(json);
+const coordinates: { x: number; y: number } = JSON.parse(json);
 console.log(coordinates);
