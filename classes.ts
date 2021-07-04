@@ -11,6 +11,10 @@ class Vehicle {
 }
 
 class Car extends Vehicle {
+  constructor(public wheels: number, color: string) {
+    super(color);
+  }
+
   drive(): void {
     console.log("vroom");
   }
@@ -26,7 +30,7 @@ console.log(vehicle.color);
 // vehicle.drive();
 // vehicle.honk();
 
-// const car = new Car();
+const car = new Car(4, "black");
 // car.honk();
-// car.startDrivingProcess();
-// car.drive();
+car.startDrivingProcess();
+car.drive();
